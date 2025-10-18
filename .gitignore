@@ -5,7 +5,6 @@ dist/
 .DS_Store
 *.tsbuildinfo
 .aider*
-
 # Test outputs and temp files
 test-output/
 test-results/
@@ -13,3 +12,6 @@ test-results/
 *.test.js.map
 coverage/
 .nyc_output/
+env/
+run
+log

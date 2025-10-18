@@ -37,10 +37,10 @@ export class LocalDataAdapter {
     if (dataPath) {
       this.dataPath = dataPath;
     } else {
-      // Use path relative to this file: src/adapters/../.. = project root
-      // This works regardless of where the server is run from
-      this.dataPath = join(__dirname, '..', '..', 'data');
-    }
+      // Use absolute path since process.cwd() isn't reliable in Claude Desktop
+      this.dataPath = './data';
+
+}
     this.loadDocuments();
   }
 
